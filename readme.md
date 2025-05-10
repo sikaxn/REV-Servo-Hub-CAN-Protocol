@@ -1,6 +1,12 @@
 
 # REV Servo Hub – CAN Protocol (Unofficial Documentation)
 
+Demo script: using canalystii converter
+
+![image](img/Capture.JPG)
+Setup:
+![image](img/converter.jpg)
+
 ## 📌 Overview
 The REV Servo Hub communicates over the CAN bus using **29-bit Extended IDs**, supporting up to **6 servo channels** grouped as:
 
