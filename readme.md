@@ -5,7 +5,6 @@
 
 This protocol is **unofficial and reverse-engineered**. For official documentation or firmware support, contact [REV Robotics](https://www.revrobotics.com/).
 
-
 Demo script: using canalystii converter
 
 ![image](img/Capture.JPG)
@@ -92,15 +91,25 @@ Each command frame is **7 bytes**:
 
 ---
 
-## 🛰 Keepalive
+## 🛰 Keepalive (Fake Hardware Client)
 
-The Servo Hub requires a keepalive frame to remain active.
+The Servo Hub requires a keepalive frame to enable.
 
 | Purpose     | CAN ID      | Data     |
 |-------------|-------------|----------|
 | Keepalive   | `0x000502C0`| `[0x01]` |
 
 - Should be sent **every 100ms** (or faster)
+
+---
+
+## 🛰 Keepalive (roboRIO)
+
+If roboRIO heartbeat frame is used, fake hardware client frame will no longer enable device until servo hub is power cycled.
+
+For more information, [here](https://github.com/sikaxn/frc-canbus-heartbeat/tree/main).
+
+Note: Use this in official FRC robot is illegal. 
 
 ---
 
