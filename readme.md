@@ -103,7 +103,7 @@ The Servo Hub requires a keepalive frame to enable.
 
 ---
 
-## 🛰 Keepalive (roboRIO)
+## 🛰 Keepalive (fake roboRIO heartbeat)
 
 If roboRIO heartbeat frame is used, fake hardware client frame will no longer enable device until servo hub is power cycled.
 
