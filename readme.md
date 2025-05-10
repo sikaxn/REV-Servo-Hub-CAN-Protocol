@@ -1,6 +1,11 @@
 
 # REV Servo Hub – CAN Protocol (Unofficial Documentation)
 
+## ⚠️ Disclaimer
+
+This protocol is **unofficial and reverse-engineered**. For official documentation or firmware support, contact [REV Robotics](https://www.revrobotics.com/).
+
+
 Demo script: using canalystii converter
 
 ![image](img/Capture.JPG)
@@ -8,6 +13,9 @@ Setup:
 ![image](img/converter.jpg)
 
 ## 📌 Overview
+
+(This document is ChatGPT generated cuz I am lazy. However the script do work.)
+
 The REV Servo Hub communicates over the CAN bus using **29-bit Extended IDs**, supporting up to **6 servo channels** grouped as:
 
 - **Group 0**: Channels 0–2  
@@ -142,6 +150,3 @@ Meaning:
 
 ---
 
-## ⚠️ Disclaimer
-
-This protocol is **unofficial and reverse-engineered**. For official documentation or firmware support, contact [REV Robotics](https://www.revrobotics.com/).
