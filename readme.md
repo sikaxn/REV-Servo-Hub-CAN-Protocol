@@ -66,9 +66,9 @@ Each command frame is **7 bytes**:
 
 | Byte(s) | Description                                  |
 |---------|----------------------------------------------|
-| 0–1     | Pause for Channel A (uint16, little endian)  |
-| 2–3     | Pause for Channel B (uint16, little endian)  |
-| 4–5     | Pause for Channel C (uint16, little endian)  |
+| 0–1     | Paluse for Channel A (uint16, little endian) |
+| 2–3     | Paluse for Channel B (uint16, little endian) |
+| 4–5     | Paluse for Channel C (uint16, little endian) |
 | 6       | Run/Power bitmask (1 byte)                   |
 
 ### ⏱ Pause
@@ -120,8 +120,8 @@ When active, the hub sends state feedback:
 
 | Byte(s) | Meaning                        |
 |---------|--------------------------------|
-| 0–5     | Unknown (possibly reserved)    |
-| 6       | Run/Power bitmask (same format as TX) |
+| 0–5     | Paluse for all channel (same format as TX) |
+| 6       | Run bitmask (same format as TX without pwr)|
 
 If powered off or disabled, bitmask = `0x00`.
 
