@@ -110,6 +110,7 @@ If roboRIO heartbeat frame is used, fake hardware client frame will no longer en
 For more information, [here](https://github.com/sikaxn/frc-canbus-heartbeat/tree/main).
 
 Note: Use this in official FRC robot is illegal. 
+Note2: You don't need to send any keep alive frame if you're connected to roboRIO. As roboRIO itself will send this frame for you (if enabled using DS).
 
 ---
 
